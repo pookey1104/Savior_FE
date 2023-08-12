@@ -1,0 +1,110 @@
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+body::-webkit-scrollbar,
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  font-size: 2vh;
+  font-weight: 600;
+}
+
+body {
+  background-image: url(../image/background/background.png);
+  background-repeat: repeat;
+  background-size: contain;
+  margin: 0;
+  overflow: auto;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.top-buttons img {
+  width: 32px;
+}
+
+.title {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.detail {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.detail h3 {
+  margin: 0;
+}
+
+.reples {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.reples h3 {
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.reple hr {
+  opacity: 40%;
+}
+.add-reples {
+  background: rgba(238, 238, 238, 1);
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 60px;
+  border-radius: 15px;
+  bottom: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 90%;
+}
+
+.add-reples-textbox {
+  width: 80%;
+  background: none;
+  border: none;
+}
+
+.add-reples button {
+  height: 30px;
+  width: 50px;
+  border: none;
+  background: rgba(151, 97, 78, 1);
+  color: white;
+  border-radius: 20px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 66px;
+  background-image: url("../image/background/background.png");
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav img {
+  width: 50px;
+}
