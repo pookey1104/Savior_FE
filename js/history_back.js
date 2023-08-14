@@ -1,3 +1,4 @@
 function history_back() {
-    history.back();
+
+  history.back();
 }

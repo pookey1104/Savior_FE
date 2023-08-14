@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유게시판</title>
+    <link rel="stylesheet" href="./community.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background"></div>
+      <header class="hd">
+        <div class="hd-content">
+          <div class="hd-back">
+            <button type="button" id="back-button" onclick="history_back()">
+              <img src="./images/nav/back.svg" />
+            </button>
+          </div>
+          <div class="hd-logo">savior(logo)</div>
+          <div class="hd-profile">
+            <img src="./images/nav/user_color.png" />
+          </div>
+        </div>
+        <div class="page-title">자유게시판</div>
+        <hr id="title-hr" />
+      </header>
+      <section class="sec">
+        <div class="choice">
+          <div class="country">
+            <span>#일본</span>
+          </div>
+          <div class="country">
+            <span>#베트남</span>
+          </div>
+          <div class="country">
+            <span>#미국</span>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="box">
+            <div class="picbox">
+              <img src="./커뮤니티목록사진예시.jpg" />
+            </div>
+            <div class="writebox">
+              <p>여행지에서 택시 싸게 타는 법 공유합니다.</p>
+              <div class="list_user">
+                <div class="heart">
+                  <img src="./images/icon/heart-outline.svg" />
+                  <span>2</span>
+                </div>
+                <span>유저이름</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="picbox">
+              <img src="./커뮤니티목록사진예시.jpg" />
+            </div>
+            <div class="writebox">
+              <p>여행지에서 택시 싸게 타는 법 공유합니다.</p>
+              <div class="list_user">
+                <div class="heart">
+                  <img src="./images/icon/heart-outline.svg" />
+                  <span>2</span>
+                </div>
+                <span>유저이름</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="picbox">
+              <img src="./커뮤니티목록사진예시.jpg" />
+            </div>
+            <div class="writebox">
+              <p>여행지에서 택시 싸게 타는 법 공유합니다.</p>
+              <div class="list_user">
+                <div class="heart">
+                  <img src="./images/icon/heart-outline.svg" />
+                  <span>2</span>
+                </div>
+                <span>유저이름</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="picbox">
+              <img src="./커뮤니티목록사진예시.jpg" />
+            </div>
+            <div class="writebox">
+              <p>여행지에서 택시 싸게 타는 법 공유합니다.</p>
+              <div class="list_user">
+                <div class="heart">
+                  <img src="./images/icon/heart-outline.svg" />
+                  <span>2</span>
+                </div>
+                <span>유저이름</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_write">
+          <button type="button" onclick="" id="btn">글쓰기</button>
+        </div>
+      </section>
+
+      <navigation class="nav">
+        <a href="#"><img src="./images/nav/money.svg" /></a>
+        <a href="#"><img src="./images/nav/eat.png" /></a>
+        <a href="#"
+          ><img src="./images/nav/pin_color.png" style="height: 45px"
+        /></a>
+        <a href="#"><img src="./images/nav/tag_color.png" /></a>
+        <a href="#"><img src="./images/nav/edit-message.png" /></a>
+      </navigation>
+    </div>
+    <script src="./js/history_back.js"></script>
+  </body>
+</html>
