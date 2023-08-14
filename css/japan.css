@@ -1,14 +1,42 @@
+/* initial */
+@media (hover: hover) {
+  html {
+    width: 430px;
+    margin: 0 auto;
+  }
+}
+
 /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
 body::-webkit-scrollbar,
 .items::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  background-image: url(../image/background/background.png);
-  background-repeat: repeat;
-  background-size: contain;
-  margin: 0;
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/background.png");
+  z-index: -1;
+}
+
+@media (max-width: 430px) {
+  .background {
+    background-size: contain;
+  }
+}
+
+@media (hover: hover) {
+  .background {
+    width: 430px;
+  }
 }
 
 hr {
@@ -66,7 +94,7 @@ hr {
 
 .items {
   padding: 0 10% 35% 10%;
-  height: 80vh;
+  height: 30vh;
   overflow: scroll;
   font-size: 2.5vh;
   font-weight: 800;
@@ -107,7 +135,7 @@ hr {
   bottom: 0;
   width: 100%;
   height: 66px;
-  background-image: url("../image/background/background.png");
+  background-image: url("../images//background/background.png");
   border-radius: 20px 20px 0 0;
   display: flex;
   flex-direction: row;
@@ -115,6 +143,18 @@ hr {
   align-items: center;
 }
 
+@media (max-width: 430px) {
+  .nav {
+    background-size: contain;
+  }
+}
+
+@media (hover: hover) {
+  .nav {
+    width: 430px;
+  }
+}
+
 .nav img {
-  width: 50px;
+  height: 50px;
 }
