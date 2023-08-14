@@ -1,0 +1,101 @@
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+body::-webkit-scrollbar,
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(../image/background/background.png);
+  background-repeat: repeat;
+  background-size: contain;
+  margin: 0;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+
+.top_buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.top_buttons img {
+  width: 32px;
+}
+
+.title {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5% 0% 5%;
+}
+
+.page-title {
+  font-size: 3vh;
+  background: none;
+  border: none;
+}
+
+.select-country {
+  padding-top: 5%;
+  font-size: 2vh;
+  background: none;
+  border: none;
+  color: gray;
+}
+
+.page-textarea {
+  font-size: 3vh;
+  background: none;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+  height: 80%;
+}
+
+.filebox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  border: none;
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(150, 158, 108, 1);
+  font-size: 2vh;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 66px;
+  background-image: url("../image/background/background.png");
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav img {
+  width: 50px;
+}
