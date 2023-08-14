@@ -186,6 +186,7 @@ p {
 }
 #unit-icon {
     width: 45px;
+    max-height: 50px;
 }
 
 #exchange {
