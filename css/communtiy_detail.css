@@ -8,7 +8,8 @@
 
 /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
 body::-webkit-scrollbar,
-.items::-webkit-scrollbar {
+.items::-webkit-scrollbar,
+.page::-webkit-scrollbar {
   display: none;
 }
 
@@ -39,6 +40,10 @@ body::-webkit-scrollbar,
   }
 }
 
+body {
+  margin: 0%;
+}
+
 p {
   font-size: 2vh;
   font-weight: 600;
@@ -62,6 +67,11 @@ hr {
 .title {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.page {
+  height: 60vh;
+  overflow-y: scroll;
 }
 
 .detail {
@@ -95,13 +105,11 @@ hr {
   margin-left: 3%;
   margin-right: 3%;
   height: 60px;
-  width: auto;
   border-radius: 15px;
   bottom: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
 }
 
 .add-reples-textbox {
@@ -146,4 +154,10 @@ hr {
 
 .nav img {
   height: 50px;
+}
+
+.sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
