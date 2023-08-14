@@ -86,7 +86,7 @@ body {
 .slide_item.item2 img,
 .slide_item.item3 img {
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
 /* 페이지네이션 스타일 */
