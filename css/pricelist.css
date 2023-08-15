@@ -141,45 +141,50 @@ p {
   overflow-y: scroll;
 }
 
-/* 검색 결과 */
+/*드롭다운 메뉴 선택*/
+#country {
+  width: 100px;
+  height: 35px;
+  background-color: #ede1d1;
+  border-radius: 20px;
+  padding-left: 10px;
+}
 
-.result-box {
+.choice {
+  padding: 20px;
+}
+
+/*의류,음식,잡화버튼*/
+#buttons > img {
+  height: 70px;
+  margin-top: 10px;
+}
+
+#buttons {
+  width: 30%;
+  height: 150px;
+  border-radius: 15px;
+  background-color: #97614e;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 250px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+  border: none;
 }
 
-#result {
-  text-align: center;
+#buttons > span {
+  margin-bottom: 10px;
 }
 
-#result-hr {
-  width: 80%;
-}
-
-#find-info {
-  width: 70%;
+.pricebtn {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  font-size: 12px;
-}
-
-#find-pw > a {
-  color: #000000;
-}
-
-#login_btn {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 1vh 2vh;
-  border: none;
-  background-color: #7f6044;
-  color: #fff;
-  border-radius: 25px;
-  margin-top: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 15px;
 }

@@ -3,59 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Savior : 베트남 - 음식</title>
     <link rel="stylesheet" href="./css/japan.css" />
   </head>
   <body>
-    <div class="top_buttons">
-      <a href=""><img src="./image/nav/back.svg" alt="." /></a
-      ><a href=""><img src="./image/nav/user_color.png" alt="." /></a>
-    </div>
+    <div class="container">
+      <div class="background"></div>
+      <header class="hd">
+        <div class="hd-back">
+          <img
+            src="./image/nav/back.svg"
+            style="height: 30px"
+            onclick="goBack()"
+          />
+        </div>
+        <div class="hd-logo">
+          <img src="./image/savior.png" />
+        </div>
+        <div class="hd-profile">
+          <a href=""> <img src="./image/nav/user_color.png" /></a>
+        </div>
+      </header>
 
-    <div class="title">
-      <h1>음식</h1>
-      <hr />
-      <div class="country">Vietnam</div>
-    </div>
-
-    <div class="search">
-      <input type="text" placeholder="검색어를 입력하세요" /><button>
-        <img src="./image/scope.png" alt="." />
-      </button>
-    </div>
-
-    <div class="items">
-      <div class="items-shirts">
-        <img src="./image/price/foods/vietnam/chazio.png" alt="." />
-        <a>짜조</a>
+      <div class="inform">
+        <!-- 품목 -->
+        <div class="title">
+          <p>음식</p>
+        </div>
+        <!-- 나라 태그 -->
+        <div class="tag">
+          <p>Vietnam</p>
+        </div>
       </div>
 
-      <hr />
+      <section class="sec">
+        <div class="search">
+          <input type="text" placeholder="검색어를 입력하세요" /><button>
+            <img src="./image/icon/scope.png" alt="." />
+          </button>
+        </div>
 
-      <div class="items-pants">
-        <img src="./image/price/foods/vietnam/ricenoodle.png" alt="." />
-        <span>T쌀국수</span>
-      </div>
+        <div class="items">
+          <div class="items-shirts">
+            <img src="./image/price/foods/vietnam/chazio.png" alt="." />
+            <a>짜조</a>
+          </div>
 
-      <hr />
+          <hr />
 
-      <div class="items-cap">
-        <img src="./image/price/foods/vietnam/coffee.png" alt="." />
-        <span>커피</span>
-      </div>
-      <hr />
+          <div class="items-pants">
+            <img src="./image/price/foods/vietnam/ricenoodle.png" alt="." />
+            <span>T쌀국수</span>
+          </div>
+
+          <hr />
+
+          <div class="items-cap">
+            <img src="./image/price/foods/vietnam/coffee.png" alt="." />
+            <span>커피</span>
+          </div>
+          <hr />
+        </div>
+
+        <div class="add-button"><a href="">+</a></div>
+      </section>
+
+      <navigation class="nav">
+        <a href="#"><img src="./image/nav/money.svg" /></a>
+        <a href="#"><img src="./image/nav/eat.png" /></a>
+        <a href="#"
+          ><img src="./image/nav/pin_color.png" style="height: 45px"
+        /></a>
+        <a href="#"><img src="./image/nav/tag_color.png" /></a>
+        <a href="#"><img src="./image/nav/edit-message.png" /></a>
+      </navigation>
     </div>
-
-    <div class="add-button"><a href="">+</a></div>
-
-    <navigation class="nav">
-      <a href="#"><img src="./image/nav/money.svg" /></a>
-      <a href="#"><img src="./image/nav/eat.png" /></a>
-      <a href="#"
-        ><img src="./image/nav/pin_color.png" style="height: 45px"
-      /></a>
-      <a href="#"><img src="./image/nav/tag_color.png" /></a>
-      <a href="#"><img src="./image/nav/edit-message.png" /></a>
-    </navigation>
+    <script src="./js/go-back.js"></script>
+    <script src="./js/go-back-nonclick.js"></script>
   </body>
 </html>
