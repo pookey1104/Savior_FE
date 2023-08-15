@@ -1,137 +1,161 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Savoir : 마이페이지</title>
-    <link rel="stylesheet" href="./css/mypage.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Judson&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="background"></div>
-      <header class="hd">
-        <div class="hd-back">
-          <img
-            src="./image/nav/back.svg"
-            style="height: 30px"
-            onclick="goBack()"
-          />
-        </div>
-        <div class="hd-logo">
-          <img src="./image/savior.png" />
-        </div>
-        <div class="hd-profile">
-          <a href=""> <img src="./image/nav/user_color.png" /></a>
-        </div>
-      </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Savoir : 마이페이지</title>
+        <link rel="stylesheet" href="./css/mypage.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Judson&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="background"></div>
+            <header class="hd">
+                <div class="hd-back">
+                    <img
+                        src="./image/nav/back.svg"
+                        style="height: 30px"
+                        onclick="goBack()"
+                    />
+                </div>
+                <div class="hd-logo">
+                    <img src="./image/savior.png" />
+                </div>
+                <div class="hd-profile">
+                    <a href=""> <img src="./image/nav/user_color.png" /></a>
+                </div>
+            </header>
 
-      <div class="inform">
-        <div class="title">
-          <p>MyPage</p>
-        </div>
-      </div>
-
-      <section class="sec">
-        <div id="mention">
-          <h3><span id="user-name">00</span>님, 반갑습니다</h3>
-        </div>
-
-        <div id="contries-area" class="area-box">
-          <h4 class="titles">
-            Countries<img src="./image/icon/bookmark.png" class="title-icon" />
-          </h4>
-          <hr />
-
-          <div class="swiper-container">
-            <!-- If we need navigation buttons -->
-            <div
-              class="swiper-button-prev"
-              style="top: 36%; left: 16%; color: #000"
-            ></div>
-            <div
-              class="swiper-button-next"
-              style="top: 36%; right: 16%; color: #000"
-            ></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./image/flag/USA.png" alt="usa" /><br />미국
-              </div>
-              <div class="swiper-slide">
-                <img src="./image/flag/Japan.png" alt="japan" /><br />일본
-              </div>
-              <div class="swiper-slide">
-                <img src="./image/flag/Vietnam.png" alt="vietnam" /><br />베트남
-              </div>
-              <div class="swiper-slide">
-                <img src="./image/flag/Japan.png" alt="4th" /><br />
-                4번
-              </div>
+            <div class="inform">
+                <div class="title">
+                    <p>MyPage</p>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination" style="position: static"></div>
-          </div>
+
+            <section class="sec">
+                <div id="mention">
+                    <h3><span id="user-name">00</span>님, 반갑습니다</h3>
+                </div>
+
+                <div id="contries-area" class="area-box">
+                    <h4 class="titles">
+                        Countries<img
+                            src="./image/icon/bookmark.png"
+                            class="title-icon"
+                        />
+                    </h4>
+                    <hr />
+
+                    <div class="swiper-container">
+                        <!-- If we need navigation buttons -->
+                        <div
+                            class="swiper-button-prev"
+                            style="top: 36%; left: 16%; color: #000"
+                        ></div>
+                        <div
+                            class="swiper-button-next"
+                            style="top: 36%; right: 16%; color: #000"
+                        ></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img
+                                    src="./image/flag/USA.png"
+                                    alt="usa"
+                                /><br />미국
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./image/flag/Japan.png"
+                                    alt="japan"
+                                /><br />일본
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./image/flag/Vietnam.png"
+                                    alt="vietnam"
+                                /><br />베트남
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./image/flag/Japan.png"
+                                    alt="4th"
+                                /><br />
+                                4번
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div
+                            class="swiper-pagination"
+                            style="position: static"
+                        ></div>
+                    </div>
+                </div>
+
+                <div id="posts-area" class="area-box">
+                    <h4 class="titles">
+                        Posts<img
+                            src="./image/icon/post.svg"
+                            class="title-icon"
+                        />
+                    </h4>
+                    <hr />
+
+                    <div class="post-box">
+                        <div class="post-info-top">
+                            <p>작성자</p>
+                            <p>작성날짜/시간</p>
+                        </div>
+                        <div class="post-info-main">
+                            <p id="post-title">post title</p>
+                            <p>수정날짜/시간</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="comments-area" class="area-box">
+                    <h4 class="titles">
+                        Comments<img
+                            src="./image/icon/comment.svg"
+                            class="title-icon"
+                        />
+                    </h4>
+                    <hr />
+
+                    <div class="comment-box">
+                        <div class="comment-info-top">
+                            <p>작성자</p>
+                            <p>작성날짜/시간</p>
+                        </div>
+                        <div class="comment-info-main">
+                            <p id="comment-title">comment title</p>
+                            <p>수정날짜/시간</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <navigation class="nav">
+                <a href="#"><img src="./image/nav/money.svg" /></a>
+                <a href="#"><img src="./image/nav/eat.png" /></a>
+                <a href="#"
+                    ><img src="./image/nav/pin_color.png" style="height: 45px"
+                /></a>
+                <a href="#"><img src="./image/nav/tag_color.png" /></a>
+                <a href="#"><img src="./image/nav/edit-message.png" /></a>
+            </navigation>
         </div>
 
-        <div id="posts-area" class="area-box">
-          <h4 class="titles">
-            Posts<img src="./image/icon/post.svg" class="title-icon" />
-          </h4>
-          <hr />
-
-          <div class="post-box">
-            <div class="post-info-top">
-              <p>작성자</p>
-              <p>작성날짜/시간</p>
-            </div>
-            <div class="post-info-main">
-              <p id="post-title">post title</p>
-              <p>수정날짜/시간</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="comments-area" class="area-box">
-          <h4 class="titles">
-            Comments<img src="./image/icon/comment.svg" class="title-icon" />
-          </h4>
-          <hr />
-
-          <div class="comment-box">
-            <div class="comment-info-top">
-              <p>작성자</p>
-              <p>작성날짜/시간</p>
-            </div>
-            <div class="comment-info-main">
-              <p id="comment-title">comment title</p>
-              <p>수정날짜/시간</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <navigation class="nav">
-        <a href="#"><img src="./image/nav/money.svg" /></a>
-        <a href="#"><img src="./image/nav/eat.png" /></a>
-        <a href="#"
-          ><img src="./image/nav/pin_color.png" style="height: 45px"
-        /></a>
-        <a href="#"><img src="./image/nav/tag_color.png" /></a>
-        <a href="#"><img src="./image/nav/edit-message.png" /></a>
-      </navigation>
-    </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/mypage.js"></script>
-    <script src="./js/go-back.js"></script>
-    <script src="./js/go-back-nonclick.js"></script>
-  </body>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/mypage.js"></script>
+        <script src="./js/go-back.js"></script>
+        <script src="./js/go-back-nonclick.js"></script>
+    </body>
 </html>
