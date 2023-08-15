@@ -76,6 +76,10 @@ p {
   margin-left: 15px;
 }
 
+.hd-logo img {
+  width: 100px;
+}
+
 .hd-profile img {
   height: 35px;
   margin-top: 4px;

@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>map</title>
-    <script defer src="./map.js"></script>
+    <title>Savior : Map</title>
+    <script defer src="./js/map.js"></script>
     <script
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0F3CbRAi8ZqT2RJ8rDa1YrZcU5SBr4EI&callback=initMap&libraries=places"
     ></script>
-    <link rel="stylesheet" href="./map.css" />
+    <link rel="stylesheet" href="./css/map.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,16 +21,18 @@
     <div class="container">
       <div class="background"></div>
       <header class="hd">
-        <div class="hd-content">
-          <div class="hd-back">
-            <button type="button" id="back-button" onclick="history_back()">
-              <img src="./images/nav/back.svg" />
-            </button>
-          </div>
-          <div class="hd-logo">savior(logo)</div>
-          <div class="hd-profile">
-            <img src="./images/nav/user_color.png" />
-          </div>
+        <div class="hd-back">
+          <img
+            src="./image/nav/back.svg"
+            style="height: 30px"
+            onclick="goBack()"
+          />
+        </div>
+        <div class="hd-logo">
+          <img src="./image/savior.png" />
+        </div>
+        <div class="hd-profile">
+          <a href=""> <img src="./image/nav/user_color.png" /></a>
         </div>
       </header>
 
@@ -45,15 +47,16 @@
       </section>
 
       <navigation class="nav">
-        <a href="#"><img src="./images/nav/money.svg" /></a>
-        <a href="#"><img src="./images/nav/eat.png" /></a>
+        <a href="#"><img src="./image/nav/money.svg" /></a>
+        <a href="#"><img src="./image/nav/eat.png" /></a>
         <a href="#"
-          ><img src="./images/nav/pin_color.png" style="height: 45px"
+          ><img src="./image/nav/pin_color.png" style="height: 45px"
         /></a>
-        <a href="#"><img src="./images/nav/tag_color.png" /></a>
-        <a href="#"><img src="./images/nav/edit-message.png" /></a>
+        <a href="#"><img src="./image/nav/tag_color.png" /></a>
+        <a href="#"><img src="./image/nav/edit-message.png" /></a>
       </navigation>
     </div>
-    <script src="./js/history_back.js"></script>
+    <script src="./js/go-back.js"></script>
+    <script src="./js/go-back-nonclick.js"></script>
   </body>
 </html>

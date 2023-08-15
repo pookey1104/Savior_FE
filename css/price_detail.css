@@ -1,3 +1,9 @@
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+body::-webkit-scrollbar,
+.items::-webkit-scrollbar {
+  display: none;
+}
+
 /* initial */
 @media (hover: hover) {
   html {
@@ -76,6 +82,10 @@ p {
   margin-left: 15px;
 }
 
+.hd-logo img {
+  width: 100px;
+}
+
 .hd-profile img {
   height: 35px;
   margin-top: 4px;
@@ -113,14 +123,14 @@ p {
 
 /* section */
 .sec {
-  height: calc(100vh - 58px - 66px);
-  margin-top: 58px;
+  height: calc(100vh - 58px - 66px - 104px);
   overflow-y: scroll;
 }
 
 /* inform */
 .inform {
   margin: 0 20px;
+  margin-top: 58px;
 }
 
 .title {
@@ -145,6 +155,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 /* content */

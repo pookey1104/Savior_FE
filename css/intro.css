@@ -7,6 +7,30 @@
 }
 body {
   margin: 0;
+  font-family: "Judson";
+  overflow-x: hidden;
+}
+
+/* background */
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/background.png");
+  z-index: -1;
+}
+
+@media (max-width: 430px) {
+  .background {
+    background-size: contain;
+  }
+}
+
+@media (hover: hover) {
+  .background {
+    width: 430px;
+  }
 }
 
 .slide {
@@ -45,10 +69,6 @@ body {
 
   /* transition */
   transition: left 0.7s;
-
-  background-image: url(../image/background/background.png);
-  background-repeat: repeat;
-  background-size: cover;
 }
 .slide_button {
   /* layout */

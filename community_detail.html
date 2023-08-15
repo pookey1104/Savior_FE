@@ -3,75 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Savior : 게시글</title>
+
     <link rel="stylesheet" href="./css/communtiy_detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="background">
-        <div class="top-buttons">
-          <a href=""><img src="./image/nav/back.svg" alt="." /></a>
-          <a href=""><img src="./image/nav/user_color.png" alt="." /></a>
+      <div class="background"></div>
+      <header class="hd">
+        <div class="hd-back">
+          <img
+            src="./image/nav/back.svg"
+            style="height: 30px"
+            onclick="goBack()"
+          />
         </div>
+        <div class="hd-logo">
+          <img src="./image/savior.png" />
+        </div>
+        <div class="hd-profile">
+          <a href=""> <img src="./image/nav/user_color.png" /></a>
+        </div>
+      </header>
 
+      <div class="inform">
         <div class="title">
-          <h1>자유게시판</h1>
+          <p>자유게시판</p>
+        </div>
+      </div>
+
+      <section class="sec">
+        <div class="detail">
+          <h3>닉네임</h3>
+          <span>2023 / 08 / 18</span>
+          <h2>여행지에서 택시 싸게 타는 법 공유합니다.</h2>
+          <p>
+            꿀팁 공유합니다~~~~~ 하트 10개 넘으면 알려드릴게요<br />꿀팁
+            공유합니다~~~~~ 하트 10개 넘으면 알려드릴게요
+          </p>
           <hr />
         </div>
-        <div class="sec">
-          <div class="page">
-            <div class="detail">
+
+        <div class="reples">
+          <div class="reple">
+            <div class="user-info">
               <h3>닉네임</h3>
               <span>2023 / 08 / 18</span>
-              <h2>여행지에서 택시 싸게 타는 법 공유합니다.</h2>
-              <p>
-                꿀팁 공유합니다~~~~~ 하트 10개 넘으면 알려드릴게요<br />꿀팁
-                공유합니다~~~~~ 하트 10개 넘으면 알려드릴게요
-              </p>
-              <div class="heart" onclick="toggleHeartImage()">
-                <img src="./image/icon/heart-outline.svg" />
-              </div>
-              <hr />
             </div>
-
-            <div class="reples">
-              <div class="reple">
-                <div class="user-info">
-                  <h3>닉네임</h3>
-                  <span>2023 / 08 / 18</span>
-                </div>
-                <p>알려주세요~~~</p>
-                <hr />
-              </div>
-
-              <div class="reple">
-                <div class="user-info">
-                  <h3>닉네임</h3>
-                  <span>2023 / 08 / 18</span>
-                </div>
-                <p>알려주세요~~~</p>
-                <hr />
-              </div>
-            </div>
+            <p>알려주세요~~~</p>
+            <hr />
           </div>
 
-          <div class="add-reples">
-            <input type="text" class="add-reples-textbox" /><button>
-              등록
-            </button>
+          <div class="reple">
+            <div class="user-info">
+              <h3>닉네임</h3>
+              <span>2023 / 08 / 18</span>
+            </div>
+            <p>알려주세요~~~</p>
+            <hr />
           </div>
         </div>
 
-        <navigation class="nav">
-          <a href="#"><img src="./image/nav/money.svg" /></a>
-          <a href="#"><img src="./image/nav/eat.png" /></a>
-          <a href="#"
-            ><img src="./image/nav/pin_color.png" style="height: 45px"
-          /></a>
-          <a href="#"><img src="./image/nav/tag_color.png" /></a>
-          <a href="#"><img src="./image/nav/edit-message.png" /></a>
-        </navigation>
-      </div>
+        <div class="add-reples-box">
+          <div class="add-reples">
+            <input
+              type="text"
+              placeholder="댓글을 작성해주세요."
+              class="add-reples-textbox"
+            />
+            <input type="submit" value="등록" name="submit" class="button" />
+          </div>
+        </div>
+      </section>
+
+      <navigation class="nav">
+        <a href="#"><img src="./image/nav/money.svg" /></a>
+        <a href="#"><img src="./image/nav/eat.png" /></a>
+        <a href="#"
+          ><img src="./image/nav/pin_color.png" style="height: 45px"
+        /></a>
+        <a href="#"><img src="./image/nav/tag_color.png" /></a>
+        <a href="#"><img src="./image/nav/edit-message.png" /></a>
+      </navigation>
     </div>
+    <script src="./js/go-back.js"></script>
+    <script src="./js/go-back-nonclick.js"></script>
   </body>
 </html>

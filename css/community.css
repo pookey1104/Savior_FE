@@ -86,11 +86,6 @@ p {
   margin-right: 15px;
 }
 
-.page-title {
-  margin: 0 3vw;
-  font-size: 4vh;
-}
-
 .inform {
   margin: 0 20px;
   margin-top: 58px;
@@ -141,45 +136,84 @@ p {
   overflow-y: scroll;
 }
 
-/* 검색 결과 */
+/*#선택*/
+.country {
+  width: 100px;
+  height: 30px;
+  background-color: #ede1d1;
+  border-radius: 20px;
 
-.result-box {
+  margin-left: 10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.choice {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+}
+
+/*커뮤니티리스트*/
+.box {
+  display: flex;
+  flex-direction: row;
+  border: 2px;
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.picbox > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.writebox > p {
+  font-size: 16px;
+}
+.list_user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.list_user > span {
+  font-size: 14px;
+}
+
+.heart {
+  display: flex;
+}
+
+.heart > img {
+  width: 18px;
+  color: red;
+}
+
+.btn_write {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 250px;
 }
 
-#result {
-  text-align: center;
-}
-
-#result-hr {
-  width: 80%;
-}
-
-#find-info {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  font-size: 12px;
-}
-
-#find-pw > a {
-  color: #000000;
-}
-
-#login_btn {
+#btn {
   width: 50%;
-  margin: 0 auto;
+  height: 40px;
   text-align: center;
-  padding: 1vh 2vh;
   border: none;
   background-color: #7f6044;
   color: #fff;
   border-radius: 25px;
-  margin-top: 5vh;
+  position: fixed;
+  bottom: 80px;
+  font-size: 2vh;
+  font-family: "Judson";
+}
+
+@media (hover: hover) {
+  #btn {
+    width: calc(430px * 0.5);
+  }
 }
