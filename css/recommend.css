@@ -165,15 +165,28 @@ p {
 
 /*드롭다운 메뉴 선택*/
 #country {
-  width: 100px;
-  height: 35px;
+  width: 200px;
+  height: 30px;
   background-color: #ede1d1;
   border-radius: 20px;
   padding-left: 10px;
 }
 
+#search {
+  width: 60px;
+  height: 30px;
+  background-color: #ede1d1;
+  border-radius: 20px;
+  padding-left: 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+
 .choice {
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 /*식당추천박스*/

@@ -1,7 +1,47 @@
+/* initial */
+@media (hover: hover) {
+  html {
+    width: 430px;
+    margin: 0 auto;
+  }
+}
+
 /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
 body::-webkit-scrollbar,
-.items::-webkit-scrollbar {
+.items::-webkit-scrollbar,
+.page::-webkit-scrollbar {
   display: none;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/background.png");
+  z-index: -1;
+}
+
+@media (max-width: 430px) {
+  .background {
+    background-size: contain;
+  }
+}
+
+@media (hover: hover) {
+  .background {
+    width: 430px;
+  }
+}
+
+body {
+  margin: 0%;
 }
 
 p {
@@ -33,6 +73,11 @@ hr {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.page {
+  height: 60vh;
+  overflow-y: scroll;
 }
 
 .detail {
@@ -83,7 +128,6 @@ hr {
   justify-content: center;
   align-items: center;
   position: fixed;
-  width: 90%;
 }
 
 @media (hover: hover) {

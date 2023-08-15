@@ -39,19 +39,22 @@
 
         <section class="sec">
           <form action="#" class="form">
-              <input type="text" class="page-title" placeholder="글 제목을 입력해주세요">
-              <label for="id_tags">해시태그</label>
-              <input id="id_tags" name="tags" type="text" placeholder="쉼표(,)로 구분하여 여러 태그 입력">
-              <hr>
-              <textarea name="" class="page-textarea" cols="30" rows="14" placeholder="글 내용을 입력해주세요"></textarea>
-              <div class="filebox">
-                  <label for="file">첨부파일</label> 
-                  <input type="file" id="file">
-              </div>
-              <div class="submit">
-              <input type="submit" class="submit-button">
-              </div>
-          </form>
+            <input type="text" id="page-title" placeholder="글 제목을 입력해주세요">
+            <input id="country-tags" name="tags" type="text" placeholder=" 나라 태그: 쉼표(,)로 구분하여 입력">
+            <hr />
+            <textarea name="" id="page-textarea" cols="30" rows="13" placeholder="글 내용을 입력해주세요"></textarea>
+            <div class="filebox">
+              <label for="file">
+                <div class="file-upload">첨부 파일 </div>
+              </label>
+              <input type="file" name="file" id="file" accept="image">
+              <span> | </span>
+              <button id="cancelButton">취소</button>
+            </div>
+            <div class="submit" onclick="publish()">
+            <input type="submit" class="submit-button">
+            </div>
+        </form>
         </section>
 
         <navigation class="nav">
@@ -64,5 +67,7 @@
       </div>
       <script src="./js/go-back.js"></script>
       <script src="./js/go-back-nonclick.js"></script>
+      <script src="./js/scrap.js"></script>
+      <script src="./js/community_post.js"></script>
     </body>
 </html>

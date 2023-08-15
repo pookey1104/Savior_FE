@@ -44,41 +44,65 @@
       </button>
     </div>
 
-    <div class="items">
-      <div class="items-shirts">
-        <img src="./image/price/others/usa/snacks.png" alt="." />
-        <a>과자</a>
-      </div>
+        <div class="items">
+          <a href="#">
+            <div class="items-shirts">
+              <img src="./image/price/others/usa/snacks.png" alt="." />
+              <div class="item-info">
+                <span>과자</span>
+                <div class="heart" onclick="toggleHeartImage()">
+                  <img src="./image/icon/heart-outline.svg" />
+                </div>
+              </div>
+            </div>
+          </a>
 
-      <hr />
+          <hr />
 
-      <div class="items-pants">
-        <img src="./image/price/others/usa/toys.png" alt="." />
-        <span>장난감</span>
-      </div>
+          <a href="#">
+            <div class="items-pants">
+              <img src="./image/price/others/usa/toys.png" alt="." />
+              <div class="item-info">
+                <span>장난감</span>
+                <div class="heart" onclick="toggleHeartImage()">
+                  <img src="./image/icon/heart-outline.svg" />
+                </div>
+              </div>
+            </div>
+          </a>
 
-      <hr />
+          <hr />
 
-      <div class="items-cap">
-        <img src="./image/price/others/usa/cup.png" alt="." />
-        <span>머그컵</span>
-      </div>
-      <hr />
+          <a href="#">
+            <div class="items-cap">
+              <img src="./image/price/others/usa/cup.png" alt="." />
+              <div class="item-info">
+                <span>머그컵</span>
+                <div class="heart" onclick="toggleHeartImage()">
+                  <img src="./image/icon/heart-outline.svg" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <hr />
+        </div>
+
+        <div class="add-button"><a href="">+</a></div>
+      </section>
+
+      <navigation class="nav">
+        <a href="#"><img src="./image/nav/money.svg" /></a>
+        <a href="#"><img src="./image/nav/eat.png" /></a>
+        <a href="#"
+          ><img src="./image/nav/pin_color.png" style="height: 45px"
+        /></a>
+        <a href="#"><img src="./image/nav/tag_color.png" /></a>
+        <a href="#"><img src="./image/nav/edit-message.png" /></a>
+      </navigation>
     </div>
-
-    <div class="add-button"><a href="">+</a></div></section>
-
-    <navigation class="nav">
-      <a href="#"><img src="./image/nav/money.svg" /></a>
-      <a href="#"><img src="./image/nav/eat.png" /></a>
-      <a href="#"
-        ><img src="./image/nav/pin_color.png" style="height: 45px"
-      /></a>
-      <a href="#"><img src="./image/nav/tag_color.png" /></a>
-      <a href="#"><img src="./image/nav/edit-message.png" /></a>
-    </navigation>
-  </div>
-  <script src="./js/go-back.js"></script>
-  <script src="./js/go-back-nonclick.js"></script>
+    <script src="./js/go-back.js"></script>
+    <script src="./js/go-back-nonclick.js"></script>
+    <script src="./js/scrap.js"></script>
   </body>
 </html>

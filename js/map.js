@@ -10,16 +10,24 @@ window.initMap = function () {
     document.getElementById("pac-input")
   );
 
-  google.maps.event.addListener(searchBox, "place_changed", function () {
+  google.maps.event.addListener(searchBox, "places_changed", function () {
     var places = searchBox.getPlaces();
     var bounds = new google.maps.LatLngBounds();
-    var i, place;
-    for (i = 0; (palce = places[i]); i++) {
-      bounds.extend(place.geometry.location);
-      marker.setPosition(place.geometry.location);
-    }
+
+    places.forEach(function (place) {
+      if (!place.geometry) {
+        console.log("Returned place contains no geometry");
+        return;
+      }
+
+      if (place.geometry.viewport) {
+        bounds.union(place.geometry.viewport);
+      } else {
+        bounds.extend(place.geometry.location);
+      }
+    });
+
     map.fitBounds(bounds);
-    map.setZoom(12);
   });
 
   const malls = [

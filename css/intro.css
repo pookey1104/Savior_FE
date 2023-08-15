@@ -5,7 +5,6 @@
     margin: 0 auto;
   }
 }
-
 body {
   margin: 0;
   font-family: "Judson";
@@ -107,7 +106,7 @@ body {
 .slide_item.item2 img,
 .slide_item.item3 img {
   display: flex;
-  height: 100%;
+  width: 100%;
 }
 
 /* 페이지네이션 스타일 */
