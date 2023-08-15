@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Savoir : 아이디 찾기</title>
-    <link rel="stylesheet" href="./css/find_id_not_exist.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Judson&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="background"></div>
-      <header class="hd">
-        <div class="hd-back">
-          <img
-            src="./image/nav/back.svg"
-            style="height: 30px"
-            onclick="goBack()"
-          />
-        </div>
-        <div class="hd-logo">
-          <img src="./image/savior.png" />
-        </div>
-        <div class="hd-profile">
-          <a href=""> <img src="./image/nav/user_color.png" /></a>
-        </div>
-      </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Savoir : 아이디 찾기</title>
+        <link rel="stylesheet" href="./css/find_id_not_exist.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Judson&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="background"></div>
+            <header class="hd">
+                <div class="hd-back">
+                    <img
+                        src="./image/nav/back.svg"
+                        style="height: 30px"
+                        onclick="goBack()"
+                    />
+                </div>
+                <div class="hd-logo">
+                    <img src="./image/savior.png" />
+                </div>
+                <div class="hd-profile">
+                    <a href=""> <img src="./image/nav/user_color.png" /></a>
+                </div>
+            </header>
 
-      <div class="inform">
-        <div class="title">
-          <p>ID 찾기</p>
-        </div>
-      </div>
+            <div class="inform">
+                <div class="title">
+                    <p>ID 찾기</p>
+                </div>
+            </div>
 
-      <section class="sec">
-        <div class="result-box">
-          <div id="result">
-            <p>
-              <span>00</span>
-              님의 ID는 <br />
-              존재하지 않습니다.
-            </p>
-          </div>
-          <hr id="result-hr" />
+            <section class="sec">
+                <div class="result-box">
+                    <div id="result">
+                        <p>
+                            <span>00</span>
+                            님의 ID는 <br />
+                            존재하지 않습니다.
+                        </p>
+                    </div>
+                    <hr id="result-hr" />
 
-          <button type="submit" id="signup_btn">회원가입</button>
+                    <button type="submit" id="signup_btn">회원가입</button>
+                </div>
+            </section>
+
+            <navigation class="nav">
+                <a href="#"><img src="./image/nav/money.svg" /></a>
+                <a href="#"><img src="./image/nav/eat.png" /></a>
+                <a href="#"
+                    ><img src="./image/nav/pin_color.png" style="height: 45px"
+                /></a>
+                <a href="#"><img src="./image/nav/tag_color.png" /></a>
+                <a href="#"><img src="./image/nav/edit-message.png" /></a>
+            </navigation>
         </div>
-      </section>
-      <navigation class="nav">
-        <a href="#"><img src="./image/nav/money.svg" /></a>
-        <a href="#"><img src="./image/nav/eat.png" /></a>
-        <a href="#"
-          ><img src="./image/nav/pin_color.png" style="height: 45px"
-        /></a>
-        <a href="#"><img src="./image/nav/tag_color.png" /></a>
-        <a href="#"><img src="./image/nav/edit-message.png" /></a>
-      </navigation>
-    </div>
-    <script src="./js/go-back.js"></script>
-    <script src="./js/go-back-nonclick.js"></script>
-  </body>
+        <script src="./js/go-back.js"></script>
+        <script src="./js/go-back-nonclick.js"></script>
+    </body>
 </html>
