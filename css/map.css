@@ -140,6 +140,11 @@ p {
     height: calc(100vh - 58px - 66px - 53px);
     margin-top: 100px;
     overflow-y: visible;
+    text-align: center;
+}
+
+.pac-input {
+    margin-bottom: 50px;
 }
 
 .sec::-webkit-scrollbar {
@@ -155,4 +160,27 @@ p {
 .sec::-webkit-scrollbar-track {
     background: #ccb89d; /*스크롤바 뒷 배경 색상*/
     border-radius: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.search input {
+    width: 60%;
+    padding-left: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+.search button {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: white;
+    border: none;
 }
