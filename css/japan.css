@@ -11,8 +11,7 @@ a:visited {
     text-decoration: none;
 }
 
-/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
-body::-webkit-scrollbar,
+/* 스크롤바 제거 */
 .items::-webkit-scrollbar {
     display: none;
 }
@@ -212,9 +211,11 @@ hr {
 }
 
 .items a {
+    color: black;
     text-decoration: none;
 }
 
+.item a:link,
 .items a:visited {
     color: black;
     text-decoration: none;
