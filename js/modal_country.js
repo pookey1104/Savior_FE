@@ -1,7 +1,14 @@
 const modal_wrap = document.querySelector(".modal_wrap");
 const modal_background = document.querySelector(".modal_background");
 //모달창 보여주는 이벤트 리스너
-document.querySelector("#modal_btn").addEventListener("click", () => {
+
+document.querySelector("#btn_1").addEventListener("click", () => {
+    open();
+});
+document.querySelector("#btn_2").addEventListener("click", () => {
+    open();
+});
+document.querySelector("#btn_3").addEventListener("click", () => {
     open();
 });
 

@@ -243,3 +243,25 @@ p {
 .place > img {
     width: 20px;
 }
+
+/* drop down */
+#input-unit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 1vh;
+    font-family: "Judson";
+}
+
+#input-dropdown {
+    height: 40px;
+    margin: 0;
+    outline: 0;
+    border: 1.5px solid #000;
+    background-color: #ede1d1;
+    padding: 6px;
+    border-radius: 25px;
+    font-family: "Judson";
+    /* text-align: center; */
+}

@@ -41,14 +41,14 @@
                 <div id="input-unit">
                     <!-- changeCountry -->
                     <select name="country" id="input-dropdown">
-                        <option
-                            selected
-                            disabled
-                            value="./image/icon/selected.png"
-                        >
+                        <option disabled value="./image/icon/selected.png">
                             나라 선택
                         </option>
-                        <option value="./image/icon/yen.png" value2="Japan">
+                        <option
+                            selected
+                            value="./image/icon/yen.png"
+                            value2="Japan"
+                        >
                             Japan
                         </option>
                         <option
@@ -63,36 +63,17 @@
                     </select>
                 </div>
                 <div class="pricebtn">
-                    <button type="button" onclick="" class="buttons" id="btn_1">
+                    <button type="button" onclick="" class="buttons">
                         <img src="./image/icon/cloth.png" /><span>의류</span>
                     </button>
-                    <button type="button" onclick="" class="buttons" id="btn_2">
+                    <button type="button" onclick="" class="buttons">
                         <img src="./image/icon/food.svg" /><span>음식</span>
                     </button>
-                    <button type="button" onclick="" class="buttons" id="btn_3">
+                    <button type="button" onclick="" class="buttons">
                         <img src="./image/icon/gift-card.png" /><span
                             >잡화</span
                         >
                     </button>
-                </div>
-
-                <div class="modal_background"></div>
-
-                <div class="modal_wrap">
-                    <div class="modal_close">
-                        <img src="../image/icon/close.png" />
-                    </div>
-                    <div class="modal_text">
-                        <div class="modal_logo">
-                            <img src="./image/savior.png" />
-                        </div>
-
-                        <div class="modal_content">
-                            <div class="modal_mention">
-                                <p>국가를 선택해주세요</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -106,7 +87,6 @@
                 <a href="#"><img src="./image/nav/edit-message.png" /></a>
             </navigation>
         </div>
-        <script src="./js/modal_country.js"></script>
         <script src="./js/go-back.js"></script>
         <script src="./js/go-back-nonclick.js"></script>
     </body>
