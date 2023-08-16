@@ -41,11 +41,7 @@
                 <div id="input-unit">
                     <!-- changeCountry -->
                     <select name="country" id="input-dropdown">
-                        <option
-                            selected
-                            disabled
-                            value="./image/icon/selected.png"
-                        >
+                        <option disabled value="./image/icon/selected.png">
                             나라 선택
                         </option>
                         <option value="./image/icon/yen.png" value2="Japan">
@@ -57,7 +53,11 @@
                         >
                             America
                         </option>
-                        <option value="./image/icon/dong.png" value2="Vietnam">
+                        <option
+                            selected
+                            value="./image/icon/dong.png"
+                            value2="Vietnam"
+                        >
                             Vietnam
                         </option>
                     </select>
@@ -157,7 +157,7 @@
                 <a href="#"><img src="./image/nav/edit-message.png" /></a>
             </navigation>
         </div>
-        <script src="./js/modal_country.js"></script>
+
         <script src="./js/go-back.js"></script>
         <script src="./js/go-back-nonclick.js"></script>
     </body>
