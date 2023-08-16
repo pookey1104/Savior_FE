@@ -48,17 +48,17 @@
                                 <div id="input-unit">
                                             <!-- changeCountry -->
                                     <select name="country" id="input-dropdown">
-                                        <option selected disabled value="./image/icon/selected.png">나라 선택</option>
+                                        <option  disabled value="./image/icon/selected.png">나라 선택</option>
                                         <option value="./image/icon/yen.png" value2="Japan">Japan</option>
                                         <option value="./image/icon/dollar.png" value2="America">America</option>
-                                        <option value="./image/icon/dong.png" value2="Vietnam">Vietnam</option>
+                                        <option selected value="./image/icon/dong.png" value2="Vietnam">Vietnam</option>
                                         
                                     </select>
                                     <img src="./image/icon/selected.png" alt="selected" id="unit-icon">
 
                                     
                                 </div>
-                                <input type="text" class="exchange-input" id="btn_1">
+                                <input type="text" class="exchange-input">
                                 
                             </div>
                             <div class="dots">
@@ -76,7 +76,7 @@
                                 <p id="krw">KRW</p>
                                 <div id="result-main">
                                     <p id="krw-sign">&#x20a9</p>
-                                    <input type="text" placeholder="원" class="exchange-result" id="btn_2">
+                                    <input type="text" placeholder="원" class="exchange-result">
                                 </div>
                                 
                             </div>
@@ -84,26 +84,7 @@
                     </form>
 
                     <div>
-                        <button type="submit" class="calc_btn" id="btn_3">환율 계산</button>
-                    </div>
-                </div>
-
-                <div class="modal_background"></div>
-
-                <div class="modal_wrap">
-                    <div class="modal_close">
-                        <img src="../image/icon/close.png" />
-                    </div>
-                    <div class="modal_text">
-                        <div class="modal_logo">
-                            <img src="./image/savior.png" />
-                        </div>
-
-                        <div class="modal_content">
-                            <div class="modal_mention">
-                                <p>국가를 선택해주세요</p>
-                            </div>
-                        </div>
+                        <button type="submit" class="calc_btn">환율 계산</button>
                     </div>
                 </div>
             </section>
@@ -119,7 +100,6 @@
             </navigation>
         </div>
         <script src="./js/exchange.js"></script>
-        <script src="./js/modal_country.js"></script>
         <script src="./js/go-back.js"></script>
         <script src="./js/go-back-nonclick.js"></script>
     </body>
