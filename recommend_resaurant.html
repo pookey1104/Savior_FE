@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Savior : 시세</title>
-        <link rel="stylesheet" href="./css/pricelist.css" />
+        <title>Savior : 식당추천</title>
+        <link rel="stylesheet" href="./css/recommend.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -33,7 +33,7 @@
 
             <div class="inform">
                 <div class="title">
-                    <p>주요 물품의 시세</p>
+                    <p>식당 추천</p>
                 </div>
             </div>
 
@@ -41,17 +41,14 @@
                 <div id="input-unit">
                     <!-- changeCountry -->
                     <select name="country" id="input-dropdown">
-                        <option
-                            selected
-                            disabled
-                            value="./image/icon/selected.png"
-                        >
+                        <option disabled value="./image/icon/selected.png">
                             나라 선택
                         </option>
                         <option value="./image/icon/yen.png" value2="Japan">
                             Japan
                         </option>
                         <option
+                            selected
                             value="./image/icon/dollar.png"
                             value2="America"
                         >
@@ -62,18 +59,69 @@
                         </option>
                     </select>
                 </div>
-                <div class="pricebtn">
-                    <button type="button" onclick="" class="buttons" id="btn_1">
-                        <img src="./image/icon/cloth.png" /><span>의류</span>
-                    </button>
-                    <button type="button" onclick="" class="buttons" id="btn_2">
-                        <img src="./image/icon/food.svg" /><span>음식</span>
-                    </button>
-                    <button type="button" onclick="" class="buttons" id="btn_3">
-                        <img src="./image/icon/gift-card.png" /><span
-                            >잡화</span
-                        >
-                    </button>
+                <form class="choice">
+                    <input
+                        type="search"
+                        placeholder="pizza"
+                        class="country"
+                        id="btn_1"
+                    />
+                    <input type="button" value="Search" id="search" />
+                </form>
+                <div class="review">
+                    <div type="button" onclick="" id="box">
+                        <!--가게사진-->
+                        <img src="./image/price/foods/japan/udon.png" />
+                        <!--가게이름, 별점-->
+                        <div class="place">
+                            DSBOB <img src="./image/icon/star-fill.svg" /><img
+                                src="./image/icon/star-fill.svg"
+                            /><img src="./image/icon/star-fill.svg" /><img
+                                src="./image/icon/star-fill.svg"
+                            /><img src="./image/icon/star-line.svg" />
+                        </div>
+                        <!--가게 위치-->
+                        <div class="place">
+                            <img src="./image/icon/location.svg" /> DOBONG-DU
+                            SAMYANG-RO
+                        </div>
+                    </div>
+
+                    <div type="button" onclick="" id="box">
+                        <!--가게사진-->
+                        <img src="./image/price/foods/japan/udon.png" />
+                        <!--가게이름, 별점-->
+                        <div class="place">
+                            DSBOB <img src="./image/icon/star-fill.svg" /><img
+                                src="./image/icon/star-fill.svg"
+                            /><img src="./image/icon/star-fill.svg" /><img
+                                src="./image/icon/star-fill.svg"
+                            /><img src="./image/icon/star-line.svg" />
+                        </div>
+                        <!--가게 위치-->
+                        <div class="place">
+                            <img src="./image/icon/location.svg" /> DOBONG-DU
+                            SAMYANG-RO
+                        </div>
+                    </div>
+
+                    <div type="button" onclick="" id="box">
+                        <!--가게사진-->
+                        <img src="./image/price/foods/japan/udon.png" />
+                        <!--가게이름, 별점-->
+                        <div class="place">
+                            DSBOB <img src="./image/icon/star-fill.svg" /><img
+                                src="./image/icon/star-fill.svg"
+                            /><img src="./image/icon/star-fill.svg" /><img
+                                src="./image/icon/star-fill.svg"
+                            /><img src="./image/icon/star-line.svg" />
+                        </div>
+                        <!--가게 위치-->
+                        <div class="place">
+                            <img src="./image/icon/location.svg" /> DOBONG-DU
+                            SAMYANG-RO
+                        </div>
+                    </div>
                 </div>
 
                 <div class="modal_background"></div>
@@ -106,7 +154,7 @@
                 <a href="#"><img src="./image/nav/edit-message.png" /></a>
             </navigation>
         </div>
-        <script src="./js/modal_country.js"></script>
+
         <script src="./js/go-back.js"></script>
         <script src="./js/go-back-nonclick.js"></script>
     </body>

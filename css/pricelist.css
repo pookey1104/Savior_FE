@@ -155,12 +155,12 @@ p {
 }
 
 /*의류,음식,잡화버튼*/
-#buttons > img {
+.buttons > img {
     height: 70px;
     margin-top: 10px;
 }
 
-#buttons {
+.buttons {
     width: 30%;
     height: 150px;
     border-radius: 15px;
@@ -176,7 +176,7 @@ p {
     border: none;
 }
 
-#buttons > span {
+.buttons > span {
     margin-bottom: 10px;
 }
 
@@ -185,6 +185,111 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 30px;
     padding-bottom: 15px;
+}
+
+/* drop down */
+#input-unit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    font-family: "Judson";
+    margin-top: 5vh;
+    margin-left: 1.5vw;
+}
+
+#input-dropdown {
+    height: 40px;
+    margin: 0;
+    outline: 0;
+    border: 1.5px solid #000;
+    background-color: #ede1d1;
+    padding: 6px;
+    border-radius: 25px;
+    font-family: "Judson";
+    /* text-align: center; */
+}
+
+/* 국가 미 선택 시 모달창 */
+.modal_wrap {
+    border-radius: 10px;
+    width: 90%;
+    height: 380px;
+    /*모달창 가운데 배치*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -45%;
+    display: none;
+    z-index: 2;
+    background-color: #fff;
+    text-align: center;
+}
+
+.modal_wrap.show-modal {
+    display: block;
+}
+
+.modal_background.show-modal {
+    display: block;
+}
+
+.modal_background {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 58px);
+    background-color: rgba(217, 217, 217, 0.5);
+    top: -58px;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.modal_close {
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.modal_close img {
+    height: 20px;
+}
+
+.modal_text {
+    margin: 0 auto;
+    position: absolute;
+    top: 75px;
+    width: 100%;
+}
+
+.modal_logo > img {
+    width: 150px;
+}
+
+.modal_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.modal_mention {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 100px;
+    background-color: #ede1d1;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 0 20px;
 }
